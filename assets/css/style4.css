@@ -743,7 +743,7 @@ button.slick-next.slick-arrow {
 .sec5 .ani-wrap .desc-right.show {opacity: 1; transform: translateY(0%);}
 .sec5 .ani-wrap .code-right.show{opacity: 1; transform: translateX(-6%);}
 
-.sec5 .ani-wrap .iframe.show:hover {width: 100%;}
+/*.sec5 .ani-wrap .iframe.show:hover {width: 100%;}*/
 
 /* section6 */
 #section6 .planet8 {
