@@ -1,204 +1,491 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="kimjunyeob">
+    <meta name="author" content="Woojehwan">
+    <title>Jehwan Portfolio</title>
 
-
-	<title>김준엽의 Porfolio</title>
-
-	<!-- css -->
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style4.css">
+    <link rel="stylesheet" href="assets/css/glitch.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/animation_show.css">
 
-	<!-- fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts/cabo-rounded/stylesheet.css">
-    <link rel="stylesheet" href="fonts/playfair/stylesheet.css">
 
-<!-- HTLM5shiv ie6~8 -->
-    <!--[if lt IE 9]> 
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script type="text/javascript">
-         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
-      </script>
-<![endif]-->
-</head>
-<body>
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" crossorigin="crossorigin">
+    <!-- font-family: 'Teko', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" crossorigin="crossorigin">
 
-	
-	
-	<header class="nav">
-		<div class="navigation-background eff03">
-		</div>
-		<div class="inner-wrap">
-			<div class="logo-wrap v-centered">
-				<a>
-					<img src="img/logo.png" alt="로고 이미지">
-				</a>
-			</div>
-	        <ul class="main-navigation v-centered clearfix" id="menu">
-                <li>
-                	<a href="#" class="nav-1 active" data-id="home">Home</a>
-                </li>
-                <li>
-                	<a href="#" class="nav-2" data-id="introduce">Introduce</a>
-                </li>
-                <li>
-                	<a href="#" class="nav-3" data-id="portfolio">Portfolio</a>
-                </li>
-                <li>
-                	<a href="#" class="nav-4" data-id="animation">Animation</a>
-                </li>
-                <li>
-                	<a href="#" class="nav-5 btn" data-id="contact">Contact</a>
-                </li>
-            </ul>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" crossorigin="crossorigin">
+
+    <!-- HTLM5shiv ie6~8 -->
+        <!--[if lt IE 9]> 
+          <script src="assets/js/html5shiv.min.js"></script>
+          <script type="text/javascript">
+             alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+          </script>
+      <![endif]-->
+  </head>
+  <body>
+
+   <!-- <div class="progress" id="progress">
+        <span class="progress-text"></span> 
+        <div id="load">
+          <div>G</div>
+          <div>N</div>
+          <div>I</div>
+          <div>D</div>
+          <div>A</div>
+          <div>O</div>
+          <div>L</div>
+      </div>
+  </div>-->
+  <!-- //progress -->
+  
+    <nav id="nav">
+        <h1>Portfolio</h1>
+        <ul class="menu">
+            <li class="active"><a href="#section1">Home</a></li>
+            <li><a href="#section2">Skill</a></li>
+            <li><a href="#section3">Introduce</a></li>
+            <li><a href="#section4">Portfolio</a></li>
+            <li><a href="#section5">Animation</a></li>
+            <li><a href="#section6" class="contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="rocketwrap">
+        <img src="assets/img/rocket.svg" class="rockett" alt>
+        <img src="assets/img/rocket2.svg" class="rockett2" alt>
+    </div>
+
+
+    <div class="stars"></div>
+
+
+    <div id="contents">
+        <section id="section1">
+            <img src="assets/img/bg-clouds-1.png" class="bgCloud1" alt >
+            <img src="assets/img/cloud-1.svg" class="cloud1" alt >
+            <img src="assets/img/cloud-2.svg" class="cloud2" alt >
+            <div class="sec1">
+                <h1 class="radius"><em>Websites</em></h1>
+                <img class="moon1" src="https://www.netbluez.com/img/moon.png" alt >
+                <img class="moon2" src="assets/img/mars.png" alt >
+                <img src="assets/img/men.png" class="men1" alt>
+                <img src="assets/img/line.png" class="line" alt>
+            </div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2">
+            <img src="assets/img/bg-clouds-2.png" class="bgCloud2" alt>
+            <div class="sec2">
+                <h3>
+                    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span>
+                </h3>
+                <div class="skill">
+                    <ul>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">90</strong><span class="f1">Oracle</span></a></li>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">90</strong><span class="f1">Postgresql</span></a></li>
+                        <li class="pie" data-percent="80"><a href="#"><strong class="count">85</strong><span class="f1">Tibero</span></a></li>
+                        <li class="pie" data-percent="80"><a href="#"><strong class="count">95</strong><span class="f1">Linux</span></a></li>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">90</strong><span class="f1">Backup</span></a></li>
+                    </ul>
+                </div>
+                <div class="skill2">
+                    <ul>
+                        <li>
+                            <img src="https://www.netbluez.com/img/graphic-planet.png">
+                            <p><strong>90</strong><span>Oracle</span></p>
+                        </li>
+                        <li>
+                            <img src="https://www.netbluez.com/img/website-planet.svg">
+                            <p><strong>90</strong><span>Postgresql</span></p>
+                        </li>
+                        <li>
+                            <img src="https://www.netbluez.com/img/wordpress-planet.png">
+                            <p><strong>85</strong><span>Tibero</span></p>
+                        </li>
+                        <li>
+                            <img src="https://www.netbluez.com/img/landing-planet.png">
+                            <p><strong>95</strong><span>Linux</span></p>
+                        </li>
+                        <li>
+                            <img src="https://www.netbluez.com/img/mobile-planet.png">
+                            <p><strong>85</strong><span>Backup</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3">
+            <img src="assets/img/bg-clouds-3.png" class="bgCloud3" alt>
+            <div class="sec3">
+                <h3>
+                    <span>I</span><span>n</span><span>t</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>e</span>
+                </h3>
+
+                <div class="intro">
+                    <div class="intro_wrap">
+                        <div class="slider">
+                            <div class="intro1">
+                                <h3>About Me</h3>
+                                <p>
+                                 안녕십니까? 우제환입니다.<br> 저의 포트폴리오 사이트를 방문해 주셔서 매우 감사드립니다.
+                                </p>
+                                <p>
+                                회사에서 원하는 자세로 매사에 노력과 열정을 다하겠습니다.<br>
+                                최고가 아닌 최선의 마음가짐을 가지고 있는 저이기에 어려움이 있어도 신입의 태도로
+                                긍정적인 모습을 보여드리겠습니다. <br><br>
+
+                                <em>시련은 있어도 실패는 없다</em>
+                                </p>
+                            </div>
+                            <div class="intro2">
+                                <h3>have License</h3>
+                                <p> - 정보처리기사(예정)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    - SQLP(예정)<br><br>
+                                    - OCP(예정)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    - 1종보통운전면허<br><br>
+                                    <em>바람이 불지 않으면 노를 저어라</em>
+                                </p>
+                            </div>
+                            <div class="intro3">
+                                <h3>I My Me Mine</h3>
+                                <p> 병역 - 32사단 병장 만기 전역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    취미 - 게임, 운동, 스포츠 시청<br><br>
+
+                                    강점 - 빠른 눈치, 신속한 일처리, 하려고하는 의지, 카멜레온같은 적응력<br><br>
+                                    자세 - 항상 신입의 자세로 초심이 변하지 않게 하겠습니다!
+
+                                    <br><br>
+
+                                    <em>문제점을 찾지 말고 해결책을 찾으라</em>
+                                </p>
+                            </div>
+                        </div>                 
+                    </div>
+                    <img src="assets/img/testimonials.svg" class="human" alt>
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4">
+            <img src="assets/img/bg-clouds-4.png" class="bgCloud4" alt>
+            <div class="sec4">
+                <h3>
+                    <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                </h3>
+                <div class="port_wrap">
+                    <div class="port">
+                        <div class="pleft" id="postWrap">
+                            <figure class="im1">
+                                <div class="glitch standard1">
+                                    <div class="glitch__item1"></div>
+                                    <div class="glitch__item1"></div>
+                                    <div class="glitch__item1"></div>
+                                    <div class="glitch__item1"></div>
+                                    <div class="glitch__item1"></div>
+                                </div>
+                            </figure>
+                            <figure class="im2 visual-middle">
+                                <img src="assets/img/standard2.png" alt>
+                            </figure>
+                            <figure class="im3 visual-fast">
+                                <img src="assets/img/standard3.png" alt>
+                            </figure>
+                        </div>
+                        <div class="pright tr">
+                            <h3 class="a2">ORACLE<br>경력</h3>
+                            <p>포스코 그룹사(28개) ORACLE DB 운영 
+							</p> 신규 구축 백업 시점 복구 HA(Rose,MCCS) 이중화 구성
+							</p>DB 마이그레이션 및 클로닝 작업
+                            </p>
+                           <div class="s4_btn a4">
+                               <!--   <button class="skew-button">
+                                    <a href="http://tislwlstnf5.dothome.co.kr" style="color: #fff;" target="blank">
+                                        <span>Site View</span><!-- -->
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port">
+                        <div class="pleft" id="postWrap">
+                            <figure class="im1 ex">
+                                <div class="glitch respon1">
+                                    <div class="glitch__item2"></div>
+                                    <div class="glitch__item2"></div>
+                                    <div class="glitch__item2"></div>
+                                    <div class="glitch__item2"></div>
+                                    <div class="glitch__item2"></div>
+                                </div>
+                            </figure>
+                            <figure class="im4 visual-middle">
+                                <img src="assets/img/respon2.png" alt>
+                            </figure>
+                            <figure class="im5 visual-fast">
+                                <img src="assets/img/respon3.png" alt>
+                            </figure>
+                        </div>
+                        <div class="pright tl">
+                            <h3 class="tl">Postgresql<br>경력</h3>
+                            <p class="desc tl">포스코 그룹사(7개) MES구축 DB백업
+							                  시점복구 마이그레이션 클로닝 작업 HA이중화 구성</p>
+                            <div class="s4_btn bl">
+                               <!-- <button class="skew-button">
+                                    <a href="http://tislwlstnf1.dothome.co.kr" style="color: #fff;" target="blank">
+                                        <span>Site View</span>
+                                    </a>
+                                </button>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port">
+                        <div class="pleft" id="postWrap">
+                            <figure class="im1">
+                                <div class="glitch mega1">
+                                    <div class="glitch__item3"></div>
+                                    <div class="glitch__item3"></div>
+                                    <div class="glitch__item3"></div>
+                                    <div class="glitch__item3"></div>
+                                    <div class="glitch__item3"></div>
+                                </div>
+                            </figure>
+                            <figure class="im6 visual-middle">
+                                <img src="assets/img/mega2.png" alt>
+                            </figure>
+                            <figure class="im7 visual-fast">
+                                <img src="assets/img/mega3.png" alt>
+                            </figure>
+                        </div>
+                        <div class="pright tr">
+                            <h3>Tibero<br>경력</h3>
+                            <p class="desc">포스코 Oneit통합 인사DB 운영 SR업무 .</p>
+                            <div class="s4_btn">
+                               <!-- <button class="skew-button">
+                                    <a href="http://tislwlstnf2.dothome.co.kr" style="color: #fff;" target="blank">
+                                        <span>Site View</span>
+                                    </a>
+                                </button>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port">
+                        <div class="pleft" id="postWrap">
+                            <figure class="im1 ex">
+                                <div class="glitch gabia1">
+                                    <div class="glitch__item4"></div>
+                                    <div class="glitch__item4"></div>
+                                    <div class="glitch__item4"></div>
+                                    <div class="glitch__item4"></div>
+                                    <div class="glitch__item4"></div>
+                                </div>
+                            </figure>
+                            <figure class="im8 visual-middle">
+                                <img src="assets/img/gabia2.png" alt>
+                            </figure>
+                            <figure class="im9 visual-fast">
+                                <img src="assets/img/gabia3.png" alt>
+                            </figure>
+                        </div>
+                        <div class="pright tl">
+                            <h3 class="tl">Backup 및 운영<br>경력</h3>
+                            </p class="desc tl">Backup(Veeam, Avamar, NetVault, NetBackup) SW 운영 & 구축 업무
+							</p class="desc tl">가상화 서버 (VMWare, Private Cloud, Public Cloud(AWS) 운영 & 구축 업무
+							</p class="desc tl">인프라 모니터링 시스템 구축 업무 (Zabbix, NKIA)
+                            <div class="s4_btn bl">
+                             <!--   <button class="skew-button">
+                                    <a href="http://tislwlstnf4.dothome.co.kr" style="color: #fff;" target="blank">
+                                        <span>Site View</span>
+                                    </a>
+                                </button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5">
+            <img src="assets/img/bg-clouds-1.png" class="bgCloud1" alt >
+            <img src="assets/img/bg-clouds-1.png" class="bgCloud2" alt >
+            <div class="sec5">
+                <h3>
+                    <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>
+                </h3>
+                <div class="ani-wrap clearfix">
+                    <div class="tit tit-left">인프라 구축<br><em>프로젝트</em></div>
+                    <div class="desc desc-left">
+                        <h5>포스코 계열사 MES & SmartFactory 인프라구축 </h5>
+                        <p><strong>포스코 그룹사(7개)</strong>UNIX, Linux, Window 구축 <strong>프로젝트참여</strong>
+						 <strong>PL 역활수행</strong> 포스코DX에서 그룹사운영 및 구축을 통해 IT 인프라 운영 경험을 쌓았습니다. 대규모 IT 환경에서 OS 및 DB 프로젝트 진행하며, 안정적인 시스템 운영을 과 프로잭트를 수행하였습니다..</p>
+                    </div>
+                    <div class="iframe iframe-left"><iframe src="ani2.html" frameborder="0" scrolling="no"></iframe></div>
+                    <button class="skew-button code-left">
+                        <a href="https://codepen.io/ffuqgvsz/pen/ZEYGdwQ" target="_blank" class="code">
+                            <!--<span>Code View</span>
+                        </a>
+                    </button>-->
+                </div>
+
+                <div class="ani-wrap clearfix">
+                    <div class="tit tit-right">포스코 계열사<br><em>DB구축업무</em></div>
+                    <div class="desc desc-right">
+                       <h5>포스코 계열사 (10개) DB 구축</h5>
+                        <p>포스코 그룹사 MES시스템 <strong>DB</strong>구축(oracle,postgresql) 및 <strong>트러블슈팅</strong> 진행 
+						<p><strong>DB 이중화</strong> 구축 (MCCS,ROSEHA) 및 <strong>Failover Test</strong><p> 진행
+                    </div>
+                    <div class="iframe iframe-right"><iframe src="ani1.html" frameborder="0" scrolling="no"></iframe></div>
+                    <button class="skew-button code-right">
+                        <a href="https://codepen.io/ffuqgvsz/details/VwYLJNQ" target="_blank" class="code">
+                           <!-- <span>Code View</span>
+                        </a>
+                    </button>-->
+                </div>
+
+                <div class="ani-wrap clearfix">
+                    <div class="tit tit-left">Backup<br><em>구축프로젝트</em></div>
+                    <div class="desc desc-left">
+                        <h5>Heart Animation</h5>
+                        <p>cube안에 6개의 div를 넣고 transform의 <strong>rotate</strong>, <strong>translate</strong>로 육면체의 위치를 각 각 잡았습니다.
+                            <strong>translateZ</strong>값으로 입체감을 주었고 애니메이션 효과를 주었습니다.</p>
+                        </div>
+                        <div class="iframe iframe-left"><iframe src="ani-img01.jpg" frameborder="0" scrolling="no"></iframe></div>
+                        <button class="skew-button code-left">
+                            <a href="https://codepen.io/ffuqgvsz/pen/qBEdzGP" target="_blank" class="code">
+                                <!--<span>Code View</span>
+                            </a>
+                        </button>-->
+                    </div>
+
+                    <div class="ani-wrap clearfix">
+                        <div class="tit tit-right">Mouse Hover<br><em>Blend Effect</em></div>
+                        <div class="desc desc-right">
+                            <h5>Blend Effect</h5>
+                            <p>이 효과는 각 이미지의 <strong>class</strong>를 다르게 해주어 마우스를 오버했을 때 각 이미지의 <strong>mix-blend-mode</strong>, <strong>filter</strong>, <strong>background-color</strong>값을 다르게 입력하여 표현하였습니다.</p>
+                        </div>
+                        <div class="iframe iframe-right"><iframe src="ani4.html" frameborder="0" scrolling="no"></iframe></div>
+                        <button class="skew-button code-right">
+                            <a href="https://codepen.io/ffuqgvsz/pen/mdyJZYG" target="_blank" class="code">
+                                <span>Code View</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- //section5 -->
+
+            <section id="section6">
+                <img src="assets/img/planet8.png" class="planet8" alt>
+                <img src="assets/img/surface.png" class="surface" alt>
+                <img src="assets/img/men2.png" class="men2" alt>
+                <div class="sec6">
+                    <h3>
+                        <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+                    </h3>
+                    <div class="contact-form">
+                        <h2>Get in touch</h2>
+                        <form class="gform" id="contacts-form"action="https://formspree.io/mnqnoebk" method="POST" novalidate="novalidate">
+                            <label>
+                                <div class="input-wrap">
+                                    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                                </div>
+                            </label>
+                            <div class="input-wrap">
+                                <input type="text" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="input-wrap">
+                                <textarea id="message" name="message" placeholder="Message" ></textarea>
+                            </div>
+                            <div class="input-wrap"></div>
+                            <button type="submit" class="btn">Contact</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2 class="title-box">
+                            <span>Contact Me!</span>                    
+                            <p>더 궁금한 점이 있으시면 연락주세요!</p>
+                            <ul>
+                                <li>
+                                    <i class="fab fa-skype"></i>
+                                    <p>Skype</p>
+                                    <a>tislwlstnf</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Email</p>
+                                    <a>tislwlstnf1@naver.com</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <p>Phone Number</p>
+                                    <a>010-2546-6499</a>
+                                </li>
+                            </ul>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- //section6 -->
         </div>
-    </header>
+        <!-- //contents -->
 
- 	<section id="content">
- 		<div class="stars">
-		<div class="twinkling">
-			
-		</div>
-	</div>
- 		<!-- section1 -->
- 		<section id="section1">
-	 		<img src="img/bg-clouds-1.png" class="bg-clouds-1" alt="no">
-			<img src="img/cloud-1.svg" class="cloud-1" alt="no">
-			<img src="img/cloud-2.svg" class="cloud-2" alt="no">
-			<div class="sec1_skill">
-				<div class="radius1"></div>
-				<div class="radius2"></div>
-				<div class="radius3"></div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="sec1">
-						<img class="moon floatingPlanet" src="img/moon.png" alt="no">
-						<img class="red floatingPlanet" src="img/red.png" alt="no">
-						<div class="welcome-text vh-centered">
-							<img src="img/home-bg-1.svg" class="welcome-bg vh-centered" alt="no">
-							<img src="img/home-bg-2.svg" class="welcome-bg-2 vh-centered" alt="no">
-							<img class="astronaut-1 eff2" src="img/cloth.png" alt="no">					
-							<h2>My Desgin</h2>
-							<h1>Websites</h1>
-							<p>made by kimjunyeob</p>	 					
-						</div>
-					</div>
-				</div>
-	 		</div>
- 		</section>
-		<!-- //section1 -->
+        <!-- script -->
+        <script src="assets/js/jquery.min_1.12.4.js"></script>
+        <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+        <script src="assets/js/easypiechart.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="assets/js/custom4.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script>
+            $(function(){
+                imagesProgress(); 
+                counter();      
+            });
+            //이미지 슬라이더
+            $(".slider").slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                arrows: true,
+                responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        autoplay: false,
+                    }
+                }
+                ]
+            });
 
-		<!-- section2 -->
-		<section id="section2">
-			<img src="img/bg-clouds-3.png" class="bg-clouds-3" alt="no">
-			<div class="container">
-				<div class="row">
-					<div class="sec2">
-						<p class="strapline show">PROFILE</p>
-						<h3 class="show">INTRODUCE</h3>
-						<div class="sec2_left">
-							<p>안녕하세요, 퍼블리셔 김준엽입니다.</p>
-							<p>열심히 하겠습니다. 감사합니다.</p>
-						</div>
-						<div class="sec2_right" >
-							<img src="img/me.jpg" alt="no">
-							<h3>이름 : 김준엽 </h3>
-							<h3>나이 : 25</h3>
-							<h3>Tel : 010-2546-6499</h3>
-							<p>E-mail : tislwlstnf1@naver.com</p>
-						</div>
-						<div class="skill-wrap">
-							<div class="skill">
-								
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</section>
-		<!-- //section2 END -->
-
-		<!-- section3 END -->
-		<section id="section3">
-			<div class="container">
-				<div class="row">
-					<div class="sec3">
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- //section3 END -->
-
-		<!-- section4 END -->
-		<section id="section3">
-			<div class="container">
-				<div class="row">
-					<div class="sec3">
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- //section4 END -->
-
-		<!-- section5 -->
-		<section id="section5">
-			<div class="container">
-				<div class="row">
-					<div class="sec5 clearfix">
-							<div class="contact-form">
-								<h2>Get in touch</h2>
-								<form id="contacts-form" action="email.php" method="POST" novalidate="novalidate">
-									<div class="input-wrap">
-										<input type="text" id="fname" name="firstname" placeholder="Full Name">
-									</div>
-									<div class="input-wrap">
-										<input type="text" id="email" name="email" placeholder="Email">
-									</div>
-									<div class="input-wrap">
-										<textarea id="message" name="message" placeholder="Message" ></textarea>
-									</div>
-									<div class="input-wrap"></div>
-									<button type="submit" class="btn">Contact</button>
-								</form>
-							</div>
-							<div class="contact-info">
-								<h2 class="title-box">
-									<span>Contact Me!</span>
-									<span class="back">Contact Me!</span>
-									<p>더 궁금한 점이 있으시면 연락주세요!</p>
-									<ul>
-										<li>
-											<i class="fab fa-skype"></i>
-											<p>Skype</p>
-											<a>tislwlstnf2</a>
-										</li>
-										<li>
-											<i class="fas fa-envelope"></i>
-											<p>Email</p>
-											<a>tislwlstnf1@naver.com</a>
-										</li>
-										<li>
-											<i class="fas fa-phone"></i>
-											<p>Phone Number</p>
-											<a>01025466499</a>
-										</li>
-									</ul>
-								</h2>
-							</div>
-					</div>
-				</div>
-			</div>
-		</sction>
-		<!-- //section5 -->
-	</section>
-		
+            $(window).resize(function(){
+                var wWidth = $(window).width();
+            //화면 크기가 960 이상일 때 style="display:none" 삭제
+            if(wWidth > 768 && $(".menu").is(":hidden") ){
+                $(".menu").removeAttr("style");
+            }
+            });
+        </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
