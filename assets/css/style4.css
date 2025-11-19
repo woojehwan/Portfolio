@@ -690,7 +690,7 @@ button.slick-next.slick-arrow {
 .sec5 .ani-wrap:hover .iframe.show {width: 100%;}
 .sec5 .ani-wrap .iframe:hover.show:before {opacity: 0; z-index: -1;}
 .sec5 .ani-wrap .iframe:hover.show:after {opacity: 0; background: #000; z-index: -1;}
-/*.sec5 .ani-wrap:hover .desc {top: 73%;}*/
+.sec5 .ani-wrap:hover .desc {top: 73%;}
 
 /******section5 animation******/
 .sec5 h3 span                        {opacity: 0; transform: translateY(-10px); display: inline-block;}
