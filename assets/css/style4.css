@@ -685,9 +685,9 @@ button.slick-next.slick-arrow {
                                                         .sec5 .ani-wrap .desc-right { left: auto; right: 55%;}
                                                         .sec5 .ani-wrap .code-right {left: auto; right: 0; }
 
-/*.sec5.ani-wrap:hover .tit-left.show {left: 0; top: 20px;}
+.sec5.ani-wrap:hover .tit-left.show {left: 0; top: 20px;}
 .sec5 .ani-wrap:hover .tit-right.show {right: 0; top: 20px;}
-.sec5 .ani-wrap:hover .iframe.show {width: 100%;}*/
+.sec5 .ani-wrap:hover .iframe.show {width: 100%;}
 .sec5 .ani-wrap .iframe:hover.show:before {opacity: 0; z-index: -1;}
 .sec5 .ani-wrap .iframe:hover.show:after {opacity: 0; background: #000; z-index: -1;}
 /*.sec5 .ani-wrap:hover .desc {top: 73%;}*/
