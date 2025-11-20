@@ -787,7 +787,7 @@ button.slick-next.slick-arrow {
 
     .sec6 h3.show span                   {opacity: 1; transform: translateY(0); display: inline-block;}
 
-    .sec6 .contact-form {opacity: 0; transform: translateY(100%); transition: all 0.5s 0.5s cubic-bezier(.215,.61,.355,1);}
+   /* .sec6 .contact-form {opacity: 0; transform: translateY(100%); transition: all 0.5s 0.5s cubic-bezier(.215,.61,.355,1);}
     .sec6 .contact-info {opacity: 0; transform: translateY(100%); transition: all 0.7s 0.7s cubic-bezier(.215,.61,.355,1);}
 
     .sec6.show  .contact-form       {opacity: 1; transform: translateY(0%);}
@@ -795,7 +795,7 @@ button.slick-next.slick-arrow {
 
     .contact-form { width: 500px; height: 660px;  float: left; box-sizing: border-box; padding: 48px 24px; background: #fff; border-radius: 8px; box-shadow: 16px 16px 0 rgba(128,24,143,0.4);}
     .contact-form h2 {font-size: 50px;color: #000; font-weight: bold;}
-    .contact-form h2 {margin: 0 0 32px 0;}
+    .contact-form h2 {margin: 0 0 32px 0;}*/
     .input-wrap {margin: 6px 0 14px 0; position: relative; border: 0; border-bottom: 1px solid #ededed; box-sizing: border-box; text-align: left;}
     .input-wrap input {
         font-size: 20px !important;
@@ -1150,31 +1150,21 @@ button.slick-next.slick-arrow {
     .port .pright .s4_btn {right: -4px;}
 }
 
-
-
 /* =======================================================
-   Section 5 (sec5)의 텍스트 이동 현상 강제 제거 (최종)
+   Section 6 (sec6) Contact 폼 초기 상태 (GSAP용 최종)
    ======================================================= */
 
-/* 1. 이미지(iframe)에 마우스를 올렸을 때 텍스트(.desc)의 모든 위치/이동 효과를 강제 제거 */
-.sec5 .ani-wrap .iframe:hover ~ .desc,
-.sec5 .ani-wrap .iframe-right:hover ~ .desc-right,
-.sec5 .ani-wrap:hover .desc {
-    transform: none !important; /* 모든 이동(translate) 효과 제거 */
-    top: initial !important;    /* absolute 위치(top) 변경 효과 제거 */
-    transition: none !important;/* 애니메이션 효과 제거 */
+.sec6 .contact-form {
+    /* GSAP으로 움직일 요소이므로 위치를 절대값으로 설정 */
+    position: absolute; 
+    left: 50%;
+    
+    /* 🚨 초기 위치를 화면 아래로 확실히 숨김 */
+    top: 150%; 
+    transform: translateX(-50%); 
+    opacity: 0; 
+    
+    /* GSAP이 제어하므로 transition 속성은 제거하거나 none */
+    transition: none; 
+    z-index: 1000;
 }
-
-/* 2. 이미지 영역의 너비 변화를 방지하는 코드를 재확인 (커지지 않도록 고정) */
-.sec5 .ani-wrap .iframe:hover, 
-.sec5 .ani-wrap .iframe-right:hover {
-    width: 50% !important; /* 너비를 50%로 강제 고정 */
-    transform: none !important;
-    transition: none !important;
-}
-
-/* 3. 전체 ani-wrap에 마우스 오버 시 텍스트 위치 변화 방지 */
-.sec5 .ani-wrap:hover .desc {
-    top: 40% !important; /* 원래 위치(40%)로 강제 고정합니다. (제공해주신 코드에 left: 55%; top: 40%; 로 되어 있음) */
-}
-
