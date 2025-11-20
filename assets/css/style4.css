@@ -1151,20 +1151,131 @@ button.slick-next.slick-arrow {
 }
 
 /* =======================================================
-   Section 6 (sec6) Contact 폼 초기 상태 (GSAP용 최종)
+   1. 섹션 컨테이너 배치 (폼과 정보 박스를 나란히 놓기)
    ======================================================= */
 
-.sec6 .contact-form {
-    /* GSAP으로 움직일 요소이므로 위치를 절대값으로 설정 */
-    position: absolute; 
+/* 전체 섹션 컨테이너를 중앙으로 이동 및 Flexbox 적용 */
+.sec6 {
+    /* * 주의: 이 설정은 index.html에 있는 GSAP 애니메이션 (폼을 중앙으로 슬라이드 인)을 무시하고
+     * .sec6 전체를 화면 중앙에 정적으로 배치합니다. 애니메이션을 유지하려면 
+     * 해당 애니메이션 로직을 수정해야 합니다. (이 예시는 최종 레이아웃을 위한 정적 배치입니다.)
+     */
+    position: absolute;
+    top: 50%;
     left: 50%;
-    
-    /* 🚨 초기 위치를 화면 아래로 확실히 숨김 */
-    top: 150%; 
-    transform: translateX(-50%); 
-    opacity: 0; 
-    
-    /* GSAP이 제어하므로 transition 속성은 제거하거나 none */
-    transition: none; 
-    z-index: 1000;
+    transform: translate(-50%, -50%); /* 화면 중앙 정렬 */
+    width: 90%; /* 전체 너비 설정 */
+    max-width: 1000px; /* 최대 너비 제한 */
+    height: auto; /* 내용에 맞게 높이 자동 조절 */
+    display: flex; /* 자식 요소(form, info)를 가로로 배치 */
+    justify-content: space-between; /* 양쪽 끝에 배치 후 가운데 공간 확보 */
+    align-items: center; /* 세로 중앙 정렬 */
+    z-index: 10; /* 행성 이미지 위에 오도록 z-index 조정 */
+}
+
+/* 폼 (Contact Form) 스타일 조정 */
+.sec6 .contact-form {
+    width: 45%; /* 전체 너비의 약 45% 할당 */
+    min-width: 300px;
+    position: static !important; /* 기존 애니메이션 위치 속성 무시 */
+    transform: none !important; /* 기존 애니메이션 transform 속성 무시 */
+    opacity: 1 !important; /* 항상 보이도록 설정 */
+    margin-right: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05); /* 폼 배경을 투명하게 설정 (선택 사항) */
+    border-radius: 10px;
+}
+
+/* 연락처 정보 (Contact Info) 스타일 조정 */
+.sec6 .contact-info {
+    width: 45%; /* 전체 너비의 약 45% 할당 */
+    max-width: 450px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* =======================================================
+   2. 이미지와 제목 스타일 (me.jpg를 크고 둥글게)
+   ======================================================= */
+
+.sec6 .contact-info .title-image-group {
+    display: flex;
+    flex-direction: column; /* 이미지와 제목을 세로로 쌓기 */
+    align-items: center; /* 가로 중앙 정렬 */
+    margin-bottom: 40px;
+}
+
+/* 이미지 컨테이너 */
+.sec6 .contact-info .me-image-inline {
+    width: 220px; /* 원하는 크기로 조절 */
+    height: 220px;
+    margin-bottom: 20px;
+    order: 1; /* Flexbox에서 이미지 컨테이너를 먼저(위에) 배치 */
+}
+
+/* 이미지 자체 스타일 */
+.sec6 .contact-info .me-image-inline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 컨테이너를 채우도록 설정 */
+    border-radius: 50%; /* 이미지를 원형으로 만듦 */
+    border: 5px solid #00BCD4; /* 예시 이미지처럼 테두리 추가 */
+}
+
+/* 제목 스타일 */
+.sec6 .contact-info .title-box {
+    font-family: 'Abel', sans-serif; /* 폰트 유지 또는 변경 */
+    font-size: 56px; /* 제목을 크게 */
+    color: #00BCD4; /* 강조색으로 변경 */
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    order: 2; /* Flexbox에서 제목을 두 번째(아래)에 배치 */
+}
+
+
+/* =======================================================
+   3. 연락처 목록 스타일
+   ======================================================= */
+
+.sec6 .contact-info p {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.sec6 .contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sec6 .contact-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 항목을 중앙 정렬 */
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.sec6 .contact-info ul li i {
+    width: 20px; /* 아이콘 너비 통일 */
+    text-align: center;
+    margin-right: 15px;
+    color: #00BCD4;
+}
+
+.sec6 .contact-info ul li p {
+    width: 120px; /* 레이블 너비 고정 */
+    text-align: right;
+    margin: 0;
+    color: #ddd;
+}
+
+.sec6 .contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    text-align: left;
+    flex-grow: 1; /* 남은 공간을 a 태그가 차지하도록 */
 }
