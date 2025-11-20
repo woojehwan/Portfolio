@@ -451,9 +451,16 @@
         <script src="assets/js/custom4.js"></script>
         <script src="assets/js/slick.min.js"></script>
         <script>
+		// Contact Form 초기 위치 설정 (GSAP 활용)
+TweenMax.set(".sec6 .contact-form", {
+    top: '150%', 
+    x: '-50%', // translateX(-50%)
+    y: '0%', 
+    opacity: 0
+});
             $(function(){
                 imagesProgress(); 
-                counter();      
+                //counter();      
             });
             //이미지 슬라이더
             $(".slider").slick({
@@ -478,7 +485,55 @@
                 $(".menu").removeAttr("style");
             }
             });
-        </script>
+			/* jehwan.html 파일의 맨 아래 <script> 태그 안에 추가 */
+
+var skillAnimated = false; // 스킬 애니메이션 실행 여부 플래그
+var $contactForm = $(".sec6 .contact-form");
+
+$(window).on('scroll', function(){ // 🚨 custom4.js와 분리된 새로운 스크롤 이벤트 사용
+    var wScroll = $(this).scrollTop();
+    
+    // =======================================================
+    // 1. 스킬 점수 애니메이션 실행 로직
+    // =======================================================
+    var $skillSection = $(".sec2 .skill");
+    if (wScroll >= $skillSection.offset().top - $(window).height() / 1.5) {
+        if (!skillAnimated) {
+            counter(); // 스킬 점수 애니메이션 실행
+            skillAnimated = true;
+        }
+    } else {
+        // 스크롤이 위로 올라가면 초기화하여 재실행 가능하게 함
+        skillAnimated = false; 
+    }
+    
+    // =======================================================
+    // 2. Contact Me 슬라이드 애니메이션 로직 (GSAP)
+    // =======================================================
+    var sec6Top = $("#section6").offset().top;
+    var triggerPoint = sec6Top - ($(window).height() * 0.7);
+
+    if (wScroll > triggerPoint) {
+        // 화면에 들어왔을 때: GSAP으로 최종 위치(중앙)로 부드럽게 이동
+        TweenMax.to($contactForm, 1, {
+            top: '50%', 
+            x: '-50%',
+            y: '-50%',
+            opacity: 1,
+            ease: Power2.easeOut 
+        });
+    } else {
+        // 화면 밖으로 나갔을 때: 초기 위치(아래)로 되돌림 (재실행 보장)
+        TweenMax.to($contactForm, 0.5, { // 부드럽게 숨김
+            top: '150%', 
+            x: '-50%',
+            y: '0%', 
+            opacity: 0,
+            ease: Power2.easeOut 
+        });
+    }
+});
+</script>
 </body>
 </html>
 
