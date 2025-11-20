@@ -516,7 +516,7 @@ button.slick-next.slick-arrow {
   .skew-button:hover span:before {
     animation: filler .5s ease-out;
     animation-fill-mode: forwards; }
-  .skew-button:hover:after {
+ .skew-button:hover:
     animation: swoosher .7s ease-in; }
   .skew-button:active:before {
     background-color: #B638CA; }
