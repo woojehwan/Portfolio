@@ -248,13 +248,13 @@
     inset -40px 10px 110px #04042F;
 }
 .sec1 em:before {
-    content: 'My Coding'; position: absolute; left: 50%; top: -20%;
+    content: 'WooJeHwan'; position: absolute; left: 50%; top: -20%;
     transform: translateX(-50%);
     font-size: 50px; font-weight: 700;
     font-family: 'Abel', sans-serif;
 }
 .sec1 em:after {
-    content: 'Professional Front-End / Web Publisher'; position: absolute; left: 50%; bottom: -100px;
+    content: 'Professional DBA Engineer'; position: absolute; left: 50%; bottom: -100px;
     transform: translateX(-50%);
     font-size: 22px; white-space: nowrap;
     font-family: 'Abel', sans-serif; 
